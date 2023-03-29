@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Carla de Mendonça</title>
+  <title>Carla Mendonça Pedrina</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
   <style>
     mark {
       background-color: yellow;
-      color: black;
+      color: rgb(83, 88, 15);
     }
 
     mark .sub {
@@ -33,7 +33,7 @@
 
 </head>
 
-<body style="background-color: #42484C;">
+<body style="background-color: #ced0d2;">
 
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top"
@@ -56,12 +56,14 @@
             <a class="nav-link" href="#terapias">Terapias</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="retiros.html">Retiros</a>
+          <li class="nav-item">
             <a class="nav-link" href="blog-home-1.html">Blog</a>
           </li>
-
+          
 
           <li class="nav-item" style="margin-left: 10px;">
-            <a href="#contato" class="btn btn-primary">Contato</a>
+            <a href="#contato" class="btn btn-dark">Contato</a>
 
           </li>
         </ul>
@@ -79,9 +81,9 @@
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('./arquivos/psicanalise.jpg')">
           <div class="carousel-caption">
-            <h1 style="color:black;font-variant-ligatures:cursive;"> Consulta Psicanálise On-line </h1>
+            <h1 style="color:white;font-variant-ligatures:cursive;"> Psicanálise e Terapias - Presencial e On-line </h1>
             <p>
-              <a href="#contato" class="btn btn-primary">Agendar Consulta</a>
+              <a href="#contato" class="btn btn-dark">Agendar Consulta</a>
 
             </p>
           </div>
@@ -92,7 +94,7 @@
             <!--h1 style="color: black;font-family:cursive;">Meditação</h1>
             <p>Presencial & On-line</p-->
             <p>
-              <a href="#linkmeeting" class="btn btn-primary">Link de acesso</a>
+              <a href="#linkmeeting" class="btn btn-dark">Link de acesso</a>
 
             </p>
           </div>
@@ -110,19 +112,23 @@
       </a>
     </div>
     <script>
-      function lermais(pontosStr, lermaisStr, btnLerMaisStr) {
+      function lermais(pontosStr, lermaisStr, btnLerMaisStr, idTitleStr) {
         let pontos = document.getElementById(pontosStr);
         let maisTexto = document.getElementById(lermaisStr);
         let btnLermais = document.getElementById(btnLerMaisStr);
+        let idTitle = document.getElementById(idTitleStr)
 
         if (pontos.style.display === "none") {
           pontos.style.display = "inline";
           maisTexto.style.display = "none";
-          btnLermais.innerHTML = "Ler mais";
+          btnLermais.innerHTML = "Ler mais \&rarr; ";
+          idTitle.scrollIntoView({ behavior: "smooth" });
+
         } else {
           pontos.style.display = "none";
           maisTexto.style.display = "inline";
           btnLermais.innerHTML = "Ler menos";
+          //idTitle.scrollIntoView({behavior:"smooth"});
         }
       }
     </script>
@@ -139,7 +145,7 @@
     <div class="row">
       <div class="col-lg-4 mb-4">
         <div class="card h-100">
-          <h4 class="card-header" style="background-color: #2471A3;color: white;">
+          <h4 class="card-header" style="background-color: #ccd636;color: black;" id="posso">
             <!--span><img style="padding-bottom: 10px;" src="social.svg"></span-->
             Psicanálise
           </h4>
@@ -148,7 +154,7 @@
             <p><b>On-line e Presencial</b></p>
             <p>Psicanálise - Cura através da fala</p>
             <ul>
-              <li>Sessões individuais</li><br>
+              <li>Consultas individuais</li><br>
               <li>
                 <div style="text-align: justify;">
 
@@ -158,27 +164,157 @@
                   Já chegamos aqui com um caminho e o holístico de todas as terapias te ajudam nesta jornada de
                   descoberta e realização.
                   Um mergulho interior profundo que traz luz à consciência sobre os padrões de comportamentos que
-                  necessitam ser reconhecidos e ressignificados.
-                  Terapia, autoconhecimento, bem-estar, cura, equilíbrio e um encontro com sua essência. O que está te
-                  levando a se deparar com os conflitos ou dificuldades: dores, ansiedades, compulções, doenças,
-                  problemas financeiros, fobias, dificuldades de relacionamento, observe e investigue os vários campos
-                  da vida (pessoal, familiar, social). A análise promove um caminho de solução que será conduzido pelo
-                  próprio paciente de uma forma consciente e evolutiva dissolvendo o conflito em si tanto quanto é
-                  possível e desejado!
-                  <span id="pontos">...</span><span id="mais">
+                  necessitam ser reconhecidos e ressignificados
+                  <span id="pontos" style="display: inline;">...</span>
+                  <span id="mais" style="display: none;"><br>
+                    Terapia, autoconhecimento, bem-estar, cura, equilíbrio e um encontro com sua essência. O que está te levando a se deparar com os conflitos ou dificuldades: dores, ansiedades, compulções, doenças,
+                    problemas financeiros, fobias, dificuldades de relacionamento, observe e investigue os vários campos
+                    da vida (pessoal, familiar, social). A análise promove um caminho de solução que será conduzido pelo
+                    próprio paciente de uma forma consciente e evolutiva dissolvendo o conflito em si tanto quanto é
+                    possível e desejado!
 
                     Talvez você esteja em conflito ou em ansiedade, talvez você não tenha certeza sobre suas escolhas ou
                     simplesmente sente que não está vivendo a vida que gostaria de viver? Todos temos um lugar de
-                    direito e força para conduzir nossa vida de forma harmoniosa e equilibrada. Você sabequal é o seu?
+                    direito e força para conduzir nossa vida de forma harmoniosa e equilibrada. Você sabe qual é o seu?
                     Permita-se!</span>
-                  <button onclick="lermais('pontos','mais','btnLerMais');" id="btnLerMais">Ler mais</button>
-
-
-                </div>
+                </div><br><a href="javascript:lermais('pontos','mais','btnLerMais','posso')" id="btnLerMais"
+                  class="btn btn-dark">
+                  Ler mais &rarr;
+                </a>
             </ul>
             </p>
           </div>
           <div class="card-footer">
+            <div class="text-center">
+              <h3>
+
+                <a href="https://wa.me/5511916556191" target="_blank" style="bottom:20px;right:30px;">
+                  <svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
+                      fill="#4CAF50" />
+                    <path
+                      d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
+                      fill="#FAFAFA" />
+                  </svg>
+                </a>
+                <span style="color: black;font-size: 12px;">5511916556191</span>
+              </h3>
+              <a class="btn btn-sm btn-dark" href="https://wa.me/5511916556191">Agendar & Enviar Mensagem</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header" style="background-color: #ccd636;color: black;" id="encontros">
+            Meditação </h4>
+          <div class="card-body" style="background-color: #F2F3F4 !important;">
+
+            <p class="card-text">
+            <p><b> Encontros On-line</b> <br>
+            <p> Práticas</p>
+            <ul>
+              <li>Não-Dual</li>
+              <li>Posturas, Asanas e Mantras</li>
+              <li>Relaxamento</li>
+              <li>Respiração</li>
+              <li>Concentração</li>
+              <li>Disciplina da Mente</li>
+              <li>Recordação de Si</li>
+              <li>Dialética da Realidade</li><br>
+
+              <li>
+                <div style="text-align: justify;">
+                  Dentro do processo terapêutico, da jornada de autoconhecimento podemos, a partir do olhar não-dual na
+                  Meditação, observar que não é sobre tornar-se algo ou alguém, mas sobre re-conhecer o que você já É
+                  <span id="pontos2" style="display: inline;">...</span>
+                  <span id="mais2" style="display: none;">
+                    e viver a partir deste puro Saber. A Meditação Não-dual compreende a natureza essencial da realidade
+                    unicamente como Consciência. Perceber que tudo é visto como uma experiência temporária dessa
+                    Essência realiza, liberdade e paz de espírito. Esta meditação tem raízes em Dzogchen, Advaita Vedanta e
+                    Neo-Advaita. Muitos são os benefícios do auto aprimoramento pessoal em uníssono com a experimentação da liberdade de apenas Ser!
+                    Vamos Meditar juntos? Agende seu momento no Zoom!
+                </div> <br>
+                <a href="javascript:lermais('pontos2','mais2','btnLerMais2','encontros')" id="btnLerMais2"
+                  class="btn btn-dark">
+                  Ler mais &rarr;
+                </a>
+              </li>
+            </ul>
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="text-center">
+              <h3>
+
+                <a href="https://wa.me/5511916556191" target="_blank" style="bottom:20px;right:30px;">
+                  <svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
+                      fill="#4CAF50" />
+                    <path
+                      d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
+                      fill="#FAFAFA" />
+                  </svg>
+                </a>
+                <span style="color: black;font-size: 12px;">5511916556191</span>
+              </h3>
+              <a class="btn btn-sm btn-dark" href="https://wa.me/5511916556191">Agendar & Enviar Mensagem</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header" style="background-color: #ccd636;color:black;" id="terapia">
+            Terapias Integrativas</h4>
+          <div class="card-body" style="background-color: #F2F3F4 !important;">
+            <p class="card-text">
+            <ul>
+
+              <p><b>On-line e Presencial</b></p>
+              <p> Integrativo </p>
+              <li>Tarot Quântico </li>
+              <li>Orientação Tantra Yoga - YogaTerapia</li>
+              <li>Massoterapia: Yoga Massagem Ayurvédica, Energética 4 elementos, Shiatsu </li>
+              <li>Auriculoacupuntura </li>
+              <li>Cone Hindu</li>
+              <li>Reiki Tradicional</li>
+              <br>
+
+              <li>
+                <div style="text-align: justify;">
+                  As terapias integrativas, são um conjunto de ferramentas que complementam um tratamento tradicional.
+                  Elas trazem um equilíbrio energético entre corpo e mente, tratando a pessoa como um ser
+                  <span id="pontos3" style="display: inline;">...</span>
+                  <span id="mais3" style="display: none;">
+                    inteiro, integral e não uma máquina de peças separadas. Os benefícios das práticas integrativas tem evidenciando o relaxamento e bem estar, alívio da dor e da ansiedade, possível redução do uso de
+                    medicamentos,fortalecimento do sistema imunológico, melhoria da qualidade de vida e um olhar criador
+                    da realidade desejada! Nossos condicionamentos não somente geram reações e respostas similares, mas
+                    também estão a narrar inúmeras situações idênticas. A questão então gira em torno de tornar        consciente aquilo que estava inconsciente, prestar atenção para o aspecto até então ignorado ou
+                    desprezado e transformar, transmutar, alterar, iluminar e observar como passamos a lidar com as situações que a vida nos apresenta. Sabemos
+                    através da descoberta da Física Quântica que a realidade de tudo que vivenciamos é fruto do nosso
+                    envolvimento como uma consciência que observa, o objeto observado, e as nossas decisões de focar em
+                    um ou outro aspecto deste objeto, coisa ou situação. A partir daí, de acordo com o nosso livre
+                    viver, podemos desbloquear situações, mudar a nossa visão, fazer escolhas diferentes e concretizar
+                    uma realidade mais positiva. Está em nossas mãos entender o porquê de determinadas situações, pode
+                    ser a chance de uma efetiva compreensão!
+                    A exemplo do Tarô Quântico, que é mais do que autoconhecimento, é uma ferramenta que pode promover
+                    probabilidades evolucionais. Somos cocriadores de nossa realidade e o tarô mostra que estamos
+                    criando o nossos estados de se relacionar com o todo estando em sintonia com a profundidade do
+                    momento presente! Agende sua consulta!</span>
+                </div><br><a href="javascript:lermais('pontos3','mais3','btnLerMais3','terapia')" id="btnLerMais3"
+                  class="btn btn-dark">
+                  Ler mais &rarr;</a>
+              </li>
+            </ul>
+            </p>
+          </div>
+          <div class="card-footer">
+
             <div class="text-center">
               <h3>
 
@@ -197,135 +333,6 @@
               </h3>
               <a class="btn btn-sm btn-dark" href="https://wa.me/5511916556191">Agendar & Enviar Mensagem</a>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header" style="background-color: #2BA3AC;color: white;">
-            Meditação </h4>
-          <div class="card-body" style="background-color: #F2F3F4 !important;">
-
-            <p class="card-text">
-            <p><b>Encontros On-line</b> <br>
-            <p> Práticas</p>
-            <ul>
-              <li>Não-Dual</li>
-              <li>Posturas, Asanas e Mantras</li>
-              <li>Relaxamento</li>
-              <li>Respiração</li>
-              <li>Concentração</li>
-              <li>Disciplina da Mente</li>
-              <li>Recordação de Si</li>
-              <li>Dialética da Realidade</li><br>
-
-              <li>
-                <div style="text-align: justify;">
-                  Dentro do processo terapêutico, da jornada de autoconhecimento podemos, a partir do olhar não-dual na
-                  Meditação, observar que não é sobre tornar-se algo ou alguém, mas sobre re-conhecer o que você já É, e
-                  viver a partir deste puro Saber. A Meditação Não-dual compreende a natureza essencial da realidade
-                  unicamente como Consciência. Perceber que tudo é visto como uma experiência temporária dessa Essência
-                  realiza, liberdade e paz de espírito. Esta meditação tem raízes em Dzogchen, Advaita Vedanta e
-                  Neo-Advaita. Muitos são os benefícios do auto aprimoramento pessoal em uníssono com a experimentação
-                  da liberdade de apenas Ser!
-                  Vamos Meditar juntos? Agende seu momento no Zoom!
-                </div>
-              </li>
-            </ul>
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="text-center">
-              <h3>
-
-                <a href="https://wa.me/5511916556191" target="_blank" style="bottom:20px;right:30px;">
-                  <svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512"
-                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
-                      fill="#4CAF50" />
-                    <path
-                      d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
-                      fill="#FAFAFA" />
-                  </svg>
-                </a>
-                <span style="color: gray;font-size: 12px;">5511916556191</span>
-              </h3>
-              <a class="btn btn-sm btn-info" href="https://wa.me/5511916556191">Agendar & Enviar Mensagem</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header" style="background-color: #45B39D;color:white;">
-            Terapias Integrativas</h4>
-          <div class="card-body" style="background-color: #F2F3F4 !important;">
-            <p class="card-text">
-            <ul>
-
-              <p><b>On-line e Presencial</b></p>
-              <p> Integrativo </p>
-              <li>Tarot Quântico </li>
-              <li>Orientação Tantra Yoga</li>
-              <li>Massoterapia: Yoga Massagem Ayurvédica, Energética 4 elementos, Shiatsu </li>
-              <li>Auriculoacupuntura </li>
-              <li>Cone Hindu</li>
-              <li>Reiki Tradicional</li>
-              <br>
-
-              <li>
-                <div style="text-align: justify;">
-                  As terapias integrativas, são um conjunto de ferramentas que complementam um tratamento tradicional.
-                  Elas trazem um equilíbrio energético entre corpo e mente, vendo a pessoa como um ser inteiro, integral
-                  e não uma máquina de peças separadas. Os benefícios das práticas integrativas tem evidenciando o
-                  relaxamento e bem estar, alívio da dor e da ansiedade, possível redução do uso de medicamentos,
-                  fortalecimento do sistema imunológico, melhoria da qualidade de vida e um olhar criador da realidade
-                  desejada! Nossos condicionamentos não somente geram reações e respostas similares, mas também estão a
-                  narrar inúmeras situações idênticas. A questão então gira em torno de tornar consciente
-
-                  <span id="pontos2">...</span><span id="mais2">
-
-                    aquilo que estava inconsciente, prestar atenção para o aspecto até então ignorado ou desprezado e
-                    transformar, transmutar, alterar, iluminar e observar como passamos a lidar com o problema. Sabemos através da descoberta da Física Quântica que a realidade de tudo que vivenciamos é fruto do nosso
-                    envolvimento como uma consciência que observa, o objeto observado, e as nossas decisões de focar em
-                    um ou outro aspecto deste objeto, coisa ou situação. A partir daí, de acordo com o nosso livre
-                    viver, podemos desbloquear situações, mudar a nossa visão, fazer escolhas diferentes e concretizar
-                    uma realidade mais positiva. Está em nossas mãos entender o porquê de determinadas situações, pode
-                    ser a chance de uma efetiva e feliz compreensão!
-                    A exemplo do Tarô Quântico, que é mais do que autoconhecimento, é uma ferramenta que pode promover
-                    probabilidades evolucionais. Somos cocriadores de nossa realidade e o tarô mostra que estamos
-                    criando o nossos estados de se relacionar com o todo estando em sintonia com a profundidade do momento
-                    presente! Agende sua consulta!</span>
-
-                  <button onclick="lermais('pontos2','mais2','btnLerMais2');" id="btnLerMais2">Ler mais</button>
-
-
-                </div>
-              </li>
-            </ul>
-            </p>
-          </div>
-          <div class="card-footer">
-
-            <div class="text-center">
-              <h3>
-
-                <a href="https://wa.me/5511916556191" target="_blank" style="bottom:20px;right:30px;">
-                  <svg enable-background="new 0 0 512 512" width="20" height="20" version="1.1" viewBox="0 0 512 512"
-                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z"
-                      fill="#4CAF50" />
-                    <path
-                      d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z"
-                      fill="#FAFAFA" />
-                  </svg>
-                </a>
-                <span style="color: gray;font-size: 12px;">5511916556191</span>
-              </h3>
-              <a class="btn btn-sm btn-success" href="https://wa.me/5511916556191">Agendar & Enviar Mensagem</a>
-            </div>
 
           </div>
         </div>
@@ -338,16 +345,14 @@
 
     <!-- Features Section -->
     <div class="row" id="quemsou">
-      <div class="col-lg-6" style="color: #B7C4CB;">
+      <div class="col-lg-6" style="color: #05080a;">
         <h2>Quem Sou</h2>
-        <br>
+      
         <p>
 
         <div style="text-align: justify;">
-          Unificamos a ciência, a espiritualidade e terapias integrativas como ferramentas de apoio, sem nenhum vínculo
-          religioso, que foram objetos de estudo e experenciados ao longo de 20 anos de profissão, considerando a
-          importância do contexto holístico dos processos de vida na transformação do indivíduo de acordo com a
-          necessidade de cada SER!
+          Unindo a ciência, a espiritualidade(sem vículo religioso) e terapias integrativas como ferramentas de apoio, que foram objetos de estudo e experenciados ao longo de 18 anos de profissão, considerando a importância do contexto holístico
+          dos processos de vida na transformação do indivíduo de acordo com a necessidade de cada SER!
           Carla conduz clientes em processos de cura, através de encontros terapêuticos, vivências presenciais e
           on-line, resultando no resgate da coragem de viver alinhada à sua verdade! As Terapias são um processo de
           crescimento e autodescoberta! Em união, promoveremos a transformação que conduz à uma vida leve e conectado a
@@ -366,7 +371,7 @@
           </p>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6"><br>
         <img class="img-fluid rounded" src="./arquivos/quemsou.jpg" alt="" height="100%" width="100%">
       </div>
 
@@ -379,7 +384,7 @@
     <div class="row" id="linkmeeting">
       <div class="col-lg-12 mb-12">
         <div class="card h-100">
-          <h4 class="card-header" style="background-color: #2471A3;color: white;">
+          <h4 class="card-header" style="background-color: #ccd636;color: black;">
             <!--span><img style="padding-bottom: 10px;" src="social.svg"></span-->
             Meditação On-line
           </h4>
@@ -412,10 +417,10 @@
 
 
             <p>
-              Sala para reunião – entre em contato pelo whatsapp <a href="https://wa.me/5511916556191">clicando aqui</a>
+              Para solicitar Sala para reunião – entre em contato pelo whatsapp <a href="https://wa.me/5511916556191">clicando aqui</a>
               <br>
 
-              Meditação: Contribuição e doação espontânea -<br>
+              Meditação: Contribuição doação espontânea -<br>
               Nubank - Carla Mendonça Pedrina - CC.99325684-7 AG.000-1<br>
               Pix - 031.154.626-97<br>
               IBAN - PT50 0023 0000 45573547249 94
@@ -431,8 +436,8 @@
         </div>
 
       </div>
-      <p style="color: #42484C;">
-        A<br>
+      <p style="color: #7f868b;">
+        <br>
       </p>
     </div>
 
@@ -446,7 +451,7 @@
       <div class="container" data-aos="fade-in">
 
         <div class="text-center">
-          <h3>
+          <h3> <style></style>
 
             <a href="https://wa.me/5511916556191" target="_blank" style="bottom:20px;right:30px;">
               <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512"
@@ -459,7 +464,7 @@
                   fill="#FAFAFA" />
               </svg>
             </a>
-            <span style="color: white;">5511916556191</span>
+            <span style="color: white;">55 11 91655-6191</span>
           </h3>
           <p style="color: white;">
             Para agendar consulta ou informações, entre em contato!<br>
